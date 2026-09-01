@@ -6,57 +6,54 @@
     <title>NutriVida - Registrar</title>
 </head>
 <body>
-    <label>Nombre: </label>
-    <input type="text" required>
+    <form id="registro">
+        <fieldset>
+            <legend>Registrar usuario</legend>
+            
+            <label>Nombre: </label>
+            <input type="text" required id="nombre">
 
-    <label>Apellido: </label>
-    <input type="text" required>
+            
+            <label>Apellido: </label>
+            <input type="text" required id="apellido">
 
-    <br />
+            <br />
+            
+            <label>RUT: </label>
+            <input type="text" required id="rut">
+            
+            <br />
+            
+            <label>Fecha de nacimiento: </label>
+            <input type="date" required id="fecnac">
 
-    <label>RUT: </label>
-    <input type="text" required>
+            <br />
+            
+            <label>Email: </label>
+            <input type="text" placeholder="example@example.com" required id="email">
 
-    <br />
+            <br />
+            
+            <label>Contraseña: </label>
+            <input type="text" required id="contrasena">
 
-    <label>Fecha de nacimiento: </label>
-    <input type="date" required>
+            <br />
+            
+            <label>Confirmar contraseña: </label>
+            <input type="text" required id="confirmarContrasena">
 
-    <br />
+            <br />
+            
+            <button type="submit">Registrar</button>
 
-    <label>Email: </label>
-    <input type="text" placeholder="example@example.com" required>
-
-    <br />
-
-    <label>Contraseña: </label>
-    <input type="text" required>
-
-    <br />
-
-    <label>Confirmar contraseña: </label>
-    <input type="text" required>
-
-    <br />
-
-    <button type="submit">Registrar</button>
-
-    <br />
-
-    <nav>
-        <li><a href="login.html">Iniciar Sesion</a></li>
-        <li><a href="index.html">Inicio</a></li>
-    </nav>
-    
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+            <br />
+            
+            <nav>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </nav>
+        </fieldset>
+    </form>
+    <script src="js/script.js"></script>
 </body>
 </html>

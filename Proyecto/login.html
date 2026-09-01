@@ -6,24 +6,26 @@
     <title>NutriVida - Login</title>
 </head>
 <body>
-    
-    <label>Email: </label>
-    <input type="text" placeholder="example@example.com" required>
+    <form id="login">
+        <label>Email: </label>
+        <input type="text" placeholder="example@example.com" required id="emailSes">
 
-    <br />
+        <br />
 
-    <label>Contraseña: </label>
-    <input type="text" required>
+        <label>Contraseña: </label>
+        <input type="password" required id="contraSes">
 
-    <br />
+        <br />
 
-    <button type="submit">Iniciar</button>
+        <button type="submit">Iniciar</button>
 
-    <br />
+        <br />
 
-    <nav>
-        <li><a href="registro.html">Registrar</a></li>
-        <li><a href="index.html">Inicio</a></li>
-    </nav>
+        <nav>
+            <li><a href="registro.html">Registrar</a></li>
+            <li><a href="index.html">Inicio</a></li>
+        </nav>
+    </form>
+    <script src="js/script.js"></script>
 </body>
 </html>
