@@ -4,6 +4,7 @@ let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let rut = document.getElementById("rut");
 let fecnac = document.getElementById("fecnac");
+let telefono = document.getElementById("telefono");
 let email = document.getElementById("email");
 let contrasena = document.getElementById("contrasena");
 let confirmarContrasena = document.getElementById("confirmarContrasena");
@@ -48,6 +49,12 @@ if(formularioRegistro){
             return;
         }
 
+        if(!/^\+56/.test(telefono.value)){
+            alert("El prefijo del numero de telefono debe ser +56");
+            tel.focus();
+            return;
+        }
+
         if(!/^[^\s@]+@(gmail\.com|outlook\.com|duocuc\.cl)$/.test(email.value)){
             alert("El email debe ser: @outlook.com, @gmail.com o @duocuc.cl");
             email.focus();
@@ -55,7 +62,7 @@ if(formularioRegistro){
         }
 
         if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@!%*?&])[A-Za-z\d$@!%*?&]{8,15}$/.test(contrasena.value)){
-            alert("La contraseña debe tener minimo 8 y maximo 15 caracteres. Y debe de tener una letra mayuscula, un numero y un caracter especial");
+            alert("La contraseña debe tener minimo 8 y maximo 15 caracteres. Y debe de tener una letra mayuscula, un numero y un caracter especial ($, @, !, *, ?, &)");
             contrasena.focus();
             return;
         }
