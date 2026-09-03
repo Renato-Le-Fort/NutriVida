@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriVida - Registrar</title>
 </head>
 <body>
-    
+    <form id="registro">
+        <fieldset>
+            <legend>Registrar usuario</legend>
+            
+            <label>Nombre: </label>
+            <input type="text" required id="nombre">
+
+            
+            <label>Apellido: </label>
+            <input type="text" required id="apellido">
+
+            <br />
+            
+            <label>RUT: </label>
+            <input type="text" required id="rut">
+            
+            <br />
+            
+            <label>Fecha de nacimiento: </label>
+            <input type="date" required id="fecnac">
+
+            <br />
+            
+            <label>Email: </label>
+            <input type="text" placeholder="example@example.com" required id="email">
+
+            <br />
+            
+            <label>Contraseña: </label>
+            <input type="text" required id="contrasena">
+
+            <br />
+            
+            <label>Confirmar contraseña: </label>
+            <input type="text" required id="confirmarContrasena">
+
+            <br />
+            
+            <button type="submit">Registrar</button>
+
+            <br />
+            
+            <nav>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </nav>
+        </fieldset>
+    </form>
+    <script src="js/script.js"></script>
 </body>
 </html>
