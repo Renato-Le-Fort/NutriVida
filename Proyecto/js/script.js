@@ -51,7 +51,7 @@ if(formularioRegistro){
 
         if(!/^\+56/.test(telefono.value)){
             alert("El prefijo del numero de telefono debe ser +56");
-            tel.focus();
+            telefono.focus();
             return;
         }
 
