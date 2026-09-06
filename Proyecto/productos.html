@@ -1,11 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>NutriVida - Planes Nutricionales</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
+
+    <header>
+
+        <img src="img/logo-nutrivida.png"
+             alt="Logo NutriVida"
+             class="logo">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="productos.html" class="activo">Productos</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Iniciar Sesión</a>
+                </li>
+
+                <li>
+                    <a href="registro.html">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="catalogo">
+
+        <!-- ENCABEZADO DEL CATÁLOGO -->
+
+        <section class="catalogo-encabezado">
+
+            <h1>Planes nutricionales</h1>
+
+            <div class="adorno-titulo">
+                <span class="linea"></span>
+                <span class="rombo"></span>
+                <span class="linea"></span>
+            </div>
+
+            <p class="catalogo-descripcion">
+                Encuentra el plan que mejor se adapte a tus objetivos y comienza
+                tu proceso junto a nuestro equipo de nutricionistas.
+            </p>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+
+        <section class="productos-grid">
+
+
+            <!-- PLAN PÉRDIDA DE PESO -->
+
+            <article class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/plan-perdida-peso.png"
+                         alt="Plan de pérdida de peso">
+                </div>
+
+                <div class="producto-icono">🌿</div>
+
+                <h2>
+                    Plan de pérdida<br>
+                    de peso
+                </h2>
+
+                <p>
+                    Enfocado en reducir grasa corporal de manera saludable y sostenible,
+                    sin dietas extremas.
+                </p>
+
+                <div class="linea-producto"></div>
+
+                <p class="precio">
+                    $35.000
+                </p>
+
+                <a href="producto.html?plan=perdida"
+                   class="boton-producto">
+                    Ver detalles
+                </a>
+
+            </article>
+
+
+            <!-- PLAN CONTROL METABÓLICO -->
+
+            <article class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/plan-control-metabolico.png"
+                         alt="Plan control metabólico">
+                </div>
+
+                <div class="producto-icono">💧</div>
+
+                <h2>
+                    Plan control<br>
+                    metabólico
+                </h2>
+
+                <p>
+                    Orientado a pacientes que necesitan mejorar su alimentación
+                    y controlar condiciones como diabetes o hipertensión.
+                </p>
+
+                <div class="linea-producto"></div>
+
+                <p class="precio">
+                    $40.000
+                </p>
+
+                <a href="producto.html?plan=metabolico"
+                   class="boton-producto">
+                    Ver detalles
+                </a>
+
+            </article>
+
+
+            <!-- PLAN NUTRICIÓN DEPORTIVA -->
+
+            <article class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/plan-nutricion-deportiva.png"
+                         alt="Plan nutrición deportiva">
+                </div>
+
+                <div class="producto-icono">🏋️</div>
+
+                <h2>
+                    Plan nutrición<br>
+                    deportiva
+                </h2>
+
+                <p>
+                    Diseñado para mejorar el rendimiento físico, aumentar masa muscular
+                    y apoyar la recomposición corporal.
+                </p>
+
+                <div class="linea-producto"></div>
+
+                <p class="precio">
+                    $45.000
+                </p>
+
+                <a href="producto.html?plan=deportivo"
+                   class="boton-producto">
+                    Ver detalles
+                </a>
+
+            </article>
+
+
+            <!-- PLAN VEGANO / VEGETARIANO -->
+
+            <article class="producto-card">
+
+                <div class="producto-imagen">
+                    <img src="img/plan-vegano-vegetariano.png"
+                         alt="Plan alimentación vegana y vegetariana">
+                </div>
+
+                <div class="producto-icono">🌱</div>
+
+                <h2>
+                    Plan alimentación<br>
+                    vegana / vegetariana
+                </h2>
+
+                <p>
+                    Asesoría para llevar una alimentación basada en plantas de forma
+                    equilibrada, completa y segura.
+                </p>
+
+                <div class="linea-producto"></div>
+
+                <p class="precio">
+                    $38.000
+                </p>
+
+                <a href="producto.html?plan=vegano"
+                   class="boton-producto">
+                    Ver detalles
+                </a>
+
+            </article>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

@@ -1,11 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriVida</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo-nutrivida.png" alt="Logo NutriVida" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- POR QUÉ ELEGIR NUTRIVIDA -->
+        <section class="porque-elegir">
+
+            <h2>¿Por qué elegir NutriVida?</h2>
+
+            <div class="decoracion-titulo">
+                <span></span>
+                <svg viewBox="0 0 64 64">
+                    <path d="M32 53 C32 53 8 39 8 23 C8 12 22 8 32 20 C42 8 56 12 56 23 C56 39 32 53 32 53Z"></path>
+                </svg>
+                <span></span>
+            </div>
+
+            <div class="porque-elegir__contenido">
+
+                <div class="porque-elegir__lista">
+
+                    <div class="porque-elegir__item">
+                        <div class="porque-elegir__icono">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="25" cy="17" r="8"></circle>
+                                <path d="M9 48 C9 38 16 31 25 31 C34 31 41 38 41 48"></path>
+                                <path d="M45 35 C48 30 56 32 56 38 C56 44 45 51 45 51 C45 51 34 44 34 38 C34 32 42 30 45 35Z"></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3>Atención personalizada</h3>
+                            <p>Cada plan se diseña según los objetivos, el historial y los indicadores de salud del paciente.</p>
+                        </div>
+                    </div>
+
+                    <div class="porque-elegir__item">
+                        <div class="porque-elegir__icono">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="15" y="14" width="34" height="42" rx="3"></rect>
+                                <rect x="24" y="8" width="16" height="10" rx="2"></rect>
+                                <path d="M22 29 L26 33 L33 25"></path>
+                                <path d="M22 42 L26 46 L33 38"></path>
+                                <line x1="37" y1="29" x2="43" y2="29"></line>
+                                <line x1="37" y1="42" x2="43" y2="42"></line>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3>Seguimiento continuo</h3>
+                            <p>Sesiones periódicas para revisar el progreso real de cada paciente.</p>
+                        </div>
+                    </div>
+
+                    <div class="porque-elegir__item porque-elegir__item--sin-borde">
+                        <div class="porque-elegir__icono">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="32" cy="17" r="7"></circle>
+                                <circle cx="15" cy="24" r="6"></circle>
+                                <circle cx="49" cy="24" r="6"></circle>
+                                <path d="M22 52 V45 C22 35 26 29 32 29 C38 29 42 35 42 45 V52"></path>
+                                <path d="M6 52 V46 C6 37 10 32 16 32 C19 32 21 33 23 35"></path>
+                                <path d="M58 52 V46 C58 37 54 32 48 32 C45 32 43 33 41 35"></path>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3>Equipo profesional</h3>
+                            <p>Nutricionistas especializados en distintas áreas de la salud y el rendimiento.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="porque-elegir__imagen-wrap">
+                    <img src="img/hero-presentacion.png" alt="Alimentación saludable NutriVida">
+                </div>
+
+            </div>
+
+            <!-- SERVICIOS EXTRA -->
+            <p class="extra-titulo">Además en NutriVida te ofrecemos:</p>
+
+            <div class="extra-ofrecemos">
+
+                <article class="extra-card">
+                    <div class="extra-card__icono">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M31 53 C31 34 40 19 56 12 C55 30 47 43 31 53Z"></path>
+                            <path d="M30 53 C29 39 21 29 9 24 C10 38 17 47 30 53Z"></path>
+                            <path d="M31 53 V28"></path>
+                        </svg>
+                    </div>
+                    <h4>Planes flexibles</h4>
+                    <p>Opciones adaptadas a tu estilo de vida y necesidades.</p>
+                </article>
+
+                <article class="extra-card">
+                    <div class="extra-card__icono">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 24 C22 18 12 24 12 37 C12 50 20 57 27 54 C30 53 34 53 37 54 C44 57 52 50 52 37 C52 24 42 18 32 24Z"></path>
+                            <path d="M32 23 V12"></path>
+                            <path d="M32 15 C37 8 45 8 49 10 C46 17 40 20 32 19"></path>
+                        </svg>
+                    </div>
+                    <h4>Alimentación equilibrada</h4>
+                    <p>Promovemos hábitos sostenibles y nutrición consciente.</p>
+                </article>
+
+                <article class="extra-card">
+                    <div class="extra-card__icono">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 13 C39 22 39 31 32 39 C25 31 25 22 32 13Z"></path>
+                            <path d="M29 38 C18 38 10 32 7 22 C18 22 27 27 29 38Z"></path>
+                            <path d="M35 38 C46 38 54 32 57 22 C46 22 37 27 35 38Z"></path>
+                            <path d="M31 42 C21 42 14 47 11 54 C20 56 27 52 32 47"></path>
+                            <path d="M33 42 C43 42 50 47 53 54 C44 56 37 52 32 47"></path>
+                        </svg>
+                    </div>
+                    <h4>Bienestar integral</h4>
+                    <p>Cuidamos tu cuerpo, mente y emociones.</p>
+                </article>
+
+                <article class="extra-card">
+                    <div class="extra-card__icono">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#4a653a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 53 C32 53 8 39 8 23 C8 12 22 8 32 20 C42 8 56 12 56 23 C56 39 32 53 32 53Z"></path>
+                        </svg>
+                    </div>
+                    <h4>Compromiso contigo</h4>
+                    <p>Estamos contigo en cada paso de tu transformación.</p>
+                </article>
+
+            </div>
+
+            <div class="cita-banner">
+                <p>“Tu salud es tu mejor inversión, en NutriVida te ayudamos a lograrla.” ♡</p>
+            </div>
+
+        </section>
+
+        <!-- RESEÑAS -->
+        <section class="seccion-resenas">
+
+            <video controls width="640">
+             <source src="video/presentacion.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+
+<h2>Lo que dicen nuestros pacientes</h2>
+<div class="decoracion-titulo">
+                <span></span>
+                <svg viewBox="0 0 64 64">
+                    <path d="M32 53 C32 53 8 39 8 23 C8 12 22 8 32 20 C42 8 56 12 56 23 C56 39 32 53 32 53Z"></path>
+                </svg>
+                <span></span>
+            </div>
+
+            <div class="resumen-resenas">
+                <p class="resumen-resenas__titulo">Excelente</p>
+                <p class="resumen-resenas__estrellas">★★★★★</p>
+                <p class="resumen-resenas__base">Basado en las reseñas de nuestros pacientes</p>
+            </div>
+
+            <div class="carrusel-resenas">
+
+                <button id="btnAnterior" class="flecha" aria-label="Reseñas anteriores">&#10094;</button>
+
+                <div class="tarjetas-resenas">
+
+                    <article class="tarjeta-resena">
+                        <div class="tarjeta-resena__encabezado">
+                            <div class="avatar">C</div>
+                            <div>
+                                <h4>Camila R.</h4>
+                                <p class="tarjeta-resena__tiempo">hace 2 meses</p>
+                            </div>
+                        </div>
+                        <p class="estrellas">★★★★★</p>
+                        <p>"Llegué con sobrepeso y sin saber por dónde partir. Con el plan de pérdida de peso bajé de forma sostenible, sin pasar hambre."</p>
+                        <p class="tarjeta-resena__plan">Plan de pérdida de peso</p>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <div class="tarjeta-resena__encabezado">
+                            <div class="avatar">J</div>
+                            <div>
+                                <h4>Jorge P.</h4>
+                                <p class="tarjeta-resena__tiempo">hace 3 meses</p>
+                            </div>
+                        </div>
+                        <p class="estrellas">★★★★★</p>
+                        <p>"Soy diabético hace años y nunca había tenido un seguimiento tan claro de mi alimentación. Mis exámenes mejoraron notablemente."</p>
+                        <p class="tarjeta-resena__plan">Plan control metabólico</p>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <div class="tarjeta-resena__encabezado">
+                            <div class="avatar">V</div>
+                            <div>
+                                <h4>Valentina S.</h4>
+                                <p class="tarjeta-resena__tiempo">hace 1 mes</p>
+                            </div>
+                        </div>
+                        <p class="estrellas">★★★★★</p>
+                        <p>"El plan de nutrición deportiva me ayudó a mejorar mi rendimiento y a entender qué comer antes y después de entrenar."</p>
+                        <p class="tarjeta-resena__plan">Plan nutrición deportiva</p>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <div class="tarjeta-resena__encabezado">
+                            <div class="avatar">F</div>
+                            <div>
+                                <h4>Fernanda L.</h4>
+                                <p class="tarjeta-resena__tiempo">hace 5 meses</p>
+                            </div>
+                        </div>
+                        <p class="estrellas">★★★★★</p>
+                        <p>"Como vegetariana, siempre me costó saber si estaba comiendo balanceado. El plan me ordenó completamente."</p>
+                        <p class="tarjeta-resena__plan">Plan vegano / vegetariano</p>
+                    </article>
+
+                    <article class="tarjeta-resena">
+                        <div class="tarjeta-resena__encabezado">
+                            <div class="avatar">D</div>
+                            <div>
+                                <h4>Diego M.</h4>
+                                <p class="tarjeta-resena__tiempo">hace 4 meses</p>
+                            </div>
+                        </div>
+                        <p class="estrellas">★★★★★</p>
+                        <p>"Excelente atención, siempre disponibles para resolver dudas. Los resultados se notaron rápido."</p>
+                        <p class="tarjeta-resena__plan">Plan de pérdida de peso</p>
+                    </article>
+
+                </div>
+
+                <button id="btnSiguiente" class="flecha" aria-label="Siguientes reseñas">&#10095;</button>
+
+            </div>
+
+        </section>
+
+        <!-- COMIENZA TU PROCESO -->
+        <section class="comenzar">
+            <h2>Comienza tu proceso hoy</h2>
+            <p>Descubre el plan nutricional que se ajusta a lo que necesitas.</p>
+            <a href="productos.html">Ver planes disponibles</a>
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion">
+            <h2>Vida sana, cuerpo sano, mente plena 💚</h2>
+
+            <p>NutriVida es una clínica de nutrición y dietética fundada el año 2016 en Temuco. Contamos con un equipo de nutricionistas especializados que acompañan a cada paciente en su proceso: pérdida de peso, control de enfermedades metabólicas, nutrición deportiva y alimentación vegetariana o vegana.</p>
+
+            <p>No se trata solo de comer distinto, sino de construir hábitos que se mantengan en el tiempo, con seguimiento profesional real y un plan hecho a la medida de cada paciente.</p>
+<div class="decoracion-titulo">
+                <span></span>
+                <svg viewBox="0 0 64 64">
+                    <path d="M32 53 C32 53 8 39 8 23 C8 12 22 8 32 20 C42 8 56 12 56 23 C56 39 32 53 32 53Z"></path>
+                </svg>
+                <span></span>
+            </div>
+        </section>
+
+    <div class="formulario-reseña">
+        <h3>Deja tu reseña ✨ </h3>
+
+        <input type="text" id="nombre-reseña" placeholder="Tu nombre">
+
+        <select id="estrellas-reseña">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+
+        <textarea id="texto-reseña" placeholder="Escribe tu opinión"></textarea>
+
+        <button type="button" id="publicar-reseña">
+            Publicar reseña
+        </button>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Clínica Nutricional NutriVida — Temuco, Región de La Araucanía.</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="registro.html">Registrarse</a>
+        </nav>
+
+        <p>&copy; 2026 NutriVida. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <div class="whatsapp-flotante">
+        <span class="whatsapp-flotante__mensaje">¿Te ayudo?</span>
+        <a href="https://wa.me/56912345678" target="_blank" class="boton-whatsapp" aria-label="Chatear por WhatsApp">💬</a>
+    </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

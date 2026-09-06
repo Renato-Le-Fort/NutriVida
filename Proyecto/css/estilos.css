@@ -1,0 +1,1849 @@
+
+
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, sans-serif;
+
+    background-color: #f7f5ef;
+
+    color: #33362f;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #dfebd6;
+
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+header .logo {
+    width: 180px;
+    height: 188px;
+
+    object-fit: cover;
+    object-position: top;
+
+    mix-blend-mode: multiply;
+}
+
+
+header nav {
+    background-color: #4a653a;
+
+    margin-top: 20px;
+
+    padding: 15px 20px;
+}
+
+
+header nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+header nav ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+header nav ul li a:hover {
+    color: #dfebd6;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 100%;
+}
+
+
+section {
+    margin-bottom: 60px;
+}
+
+
+h2 {
+    color: #4a653a;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+h3,
+h4 {
+    color: #4a653a;
+}
+
+
+/* =========================================
+   POR QUÉ ELEGIR NUTRIVIDA
+========================================= */
+
+.porque-elegir {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 50px 30px 20px 30px;
+}
+
+
+/* Título */
+
+.porque-elegir > h2 {
+    font-size: 34px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Corazón + líneas debajo del título */
+
+.decoracion-titulo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+
+.decoracion-titulo span {
+    width: 48px;
+    height: 2px;
+    background-color: #cbd8b8;
+}
+
+
+.decoracion-titulo svg {
+    width: 27px;
+
+    height: 27px;
+
+    fill: none;
+
+    stroke: #78915d;
+
+    stroke-width: 3;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+/* =========================================
+   BENEFICIOS + IMAGEN
+========================================= */
+
+.porque-elegir__contenido {
+    display: grid;
+
+    grid-template-columns: 1.35fr 0.8fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   BENEFICIOS
+========================================= */
+
+.porque-elegir__lista {
+    width: 100%;
+}
+
+
+.porque-elegir__item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #d6dfcc;
+}
+
+
+.porque-elegir__item--sin-borde {
+    border-bottom: none;
+}
+
+
+.porque-elegir__icono {
+    width: 80px;
+
+    height: 80px;
+
+    min-width: 80px;
+
+    background-color: #e4edd9;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.porque-elegir__icono svg {
+    width: 52px;
+
+    height: 52px;
+}
+
+
+.porque-elegir__item h3 {
+    font-size: 21px;
+
+    margin-bottom: 7px;
+
+    color: #4a653a;
+}
+
+
+.porque-elegir__item p {
+    font-size: 16px;
+
+    color: #41443e;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   IMAGEN NUTRIVIDA
+========================================= */
+
+.porque-elegir__imagen-wrap {
+    width: 100%;
+}
+
+
+.porque-elegir__imagen-wrap img {
+    width: 100%;
+
+    height: 440px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================
+   ADEMÁS EN NUTRIVIDA
+========================================= */
+
+.extra-titulo {
+    text-align: center;
+
+    color: #4a653a;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin: 42px 0 22px 0;
+}
+
+
+.extra-ofrecemos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Tarjetas */
+
+.extra-card {
+    background-color: #fbfaf6;
+
+    border: 1px solid #cbd8b8;
+
+    border-radius: 18px;
+
+    padding: 24px 18px;
+
+    min-height: 180px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.extra-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Iconos grandes */
+
+.extra-card__icono {
+    width: 65px;
+
+    height: 65px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.extra-card__icono svg {
+    width: 55px;
+
+    height: 55px;
+}
+
+
+.extra-card h4 {
+    font-size: 16px;
+
+    margin-bottom: 7px;
+
+    color: #4a653a;
+}
+
+
+.extra-card p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #41443e;
+}
+
+
+/* =========================================
+   FRASE INFERIOR
+========================================= */
+
+.cita-banner {
+    background-color: #e4edd9;
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 18px 20px;
+
+    color: #4a653a;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   RESEÑAS
+========================================= */
+
+.seccion-resenas {
+    max-width: 1000px;
+
+    margin: 60px auto;
+
+    padding: 0 25px;
+}
+
+
+.seccion-resenas h2 {
+    margin-bottom: 25px;
+    font-family: "Dancing Script", cursive;
+    font-size: 52px;
+    font-weight: 500;
+    color: #556b3f;
+}
+
+
+section video {
+    max-width: 100%;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border-radius: 12px;
+}
+
+
+/* RESUMEN */
+
+.resumen-resenas {
+    text-align: center;
+
+    margin: 25px 0;
+}
+
+
+.resumen-resenas__titulo {
+    font-weight: bold;
+
+    font-size: 1.3rem;
+}
+
+
+#estrellas-reseña {
+    color: #d4a72c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resumen-resenas__estrellas {
+    color: #d4a72c;
+}
+
+
+.resumen-resenas__base {
+    font-size: 0.9rem;
+
+    color: #6b6f63;
+}
+
+
+/* CARRUSEL */
+
+.carrusel-resenas {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.tarjetas-resenas {
+    display: flex;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+    max-width: 780px;
+}
+
+
+.tarjeta-resena {
+    display: none;
+
+    background-color: white;
+
+    border: 1px solid #d8e0cf;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    width: 240px;
+
+    flex-shrink: 0;
+}
+
+
+.tarjeta-resena.activa {
+    display: block;
+}
+
+
+.tarjeta-resena__encabezado {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+.avatar {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background-color: #4a653a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+.tarjeta-resena__tiempo {
+    font-size: 0.8rem;
+
+    color: #6b6f63;
+}
+
+
+.estrellas {
+    color: #d4a72c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+.tarjeta-resena__plan {
+    font-weight: bold;
+
+    color: #4a653a;
+
+    margin-top: 10px;
+
+    font-size: 0.9rem;
+}
+
+
+/* FLECHAS */
+
+.flecha {
+    background-color: white;
+
+    color: #4a653a;
+
+    border: 1px solid #d8e0cf;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 1.1rem;
+
+    flex-shrink: 0;
+}
+
+
+.flecha:hover {
+    background-color: #4a653a;
+
+    color: white;
+}
+
+
+/* =========================================
+   FORMULARIO Y PUBLICACIÓN DE RESEÑAS
+   Estilos del formulario donde el usuario puede dejar su opinión.
+========================================= */
+
+.reseñas {
+    padding: 50px 20px;
+    background-color: #f7f7f2;
+    text-align: center;
+}
+
+.reseñas h2 {
+    color: #556b3f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.reseñas > p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#lista-reseñas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.reseña {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.reseña p {
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.reseña span {
+    font-weight: bold;
+    color: #556b3f;
+}
+
+.formulario-reseña {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-reseña h3 {
+    color: #556b3f;
+    margin-bottom: 20px;
+}
+
+.formulario-reseña input,
+.formulario-reseña select,
+.formulario-reseña textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario-reseña textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#publicar-reseña {
+    background-color: #556b3f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#publicar-reseña:hover {
+    background-color: #435532;
+}
+
+
+/* =========================================
+   SECCIONES INFERIORES
+========================================= */
+
+.comenzar,
+.presentacion {
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 30px 25px;
+}
+
+
+.comenzar {
+    text-align: center;
+}
+
+
+.comenzar h2,
+.presentacion h2 {
+    margin-bottom: 15px;
+}
+
+
+.comenzar p {
+    margin-bottom: 15px;
+}
+
+
+.presentacion p {
+    margin-bottom: 15px;
+}
+
+
+.presentacion img {
+    width: 100%;
+
+    max-height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+
+    margin: 25px auto;
+}
+
+
+/* =========================================
+   BOTONES / ENLACES MAIN
+========================================= */
+
+main a {
+    display: inline-block;
+
+    background-color: #4a653a;
+
+    color: white;
+
+    padding: 10px 22px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+main a:hover {
+    background-color: #7a9a5c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #4a653a;
+
+    color: #dfebd6;
+
+    text-align: center;
+
+    padding: 25px 20px;
+}
+
+
+footer nav {
+    margin: 15px 0;
+}
+
+
+footer nav a {
+    color: #dfebd6;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+}
+
+
+footer nav a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.whatsapp-flotante {
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 999;
+}
+
+
+.whatsapp-flotante__mensaje {
+    background-color: white;
+
+    color: #33362f;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+}
+
+
+.boton-whatsapp {
+    width: 60px;
+
+    height: 60px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    background-color: #25D366;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.8rem;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.boton-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .porque-elegir__contenido {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .porque-elegir__imagen-wrap {
+        max-width: 520px;
+
+        margin: 0 auto;
+    }
+
+
+    .extra-ofrecemos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .tarjetas-resenas {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    header .logo {
+        width: 150px;
+
+        height: 158px;
+    }
+
+
+    header nav ul {
+        flex-wrap: wrap;
+
+        gap: 12px 20px;
+    }
+
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+
+    .porque-elegir {
+        padding: 35px 18px 10px 18px;
+    }
+
+
+    .porque-elegir > h2 {
+        font-size: 27px;
+    }
+
+
+    .porque-elegir__item {
+        gap: 15px;
+    }
+
+
+    .porque-elegir__icono {
+        width: 65px;
+
+        height: 65px;
+
+        min-width: 65px;
+    }
+
+
+    .porque-elegir__icono svg {
+        width: 43px;
+
+        height: 43px;
+    }
+
+
+    .porque-elegir__item h3 {
+        font-size: 18px;
+    }
+
+
+    .porque-elegir__item p {
+        font-size: 14px;
+    }
+
+
+    .porque-elegir__imagen-wrap img {
+        height: 350px;
+    }
+
+
+    .extra-ofrecemos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .carrusel-resenas {
+        gap: 5px;
+    }
+
+
+    .tarjetas-resenas {
+        max-width: 245px;
+    }
+
+
+    .whatsapp-flotante__mensaje {
+        display: none;
+    }
+
+}
+
+
+/* =====================================================
+   BLOQUE 2 - PLANES, DETALLE Y PAGOS
+   Aquí se trabaja el catálogo de planes, las tarjetas,
+   el detalle de cada plan, cantidades y formas de pago.
+===================================================== */
+
+/* =========================================
+   CATÁLOGO - ESTILOS COMPLEMENTARIOS
+   Reglas específicas para textos, imágenes y precios.
+========================================= */
+
+.catalogo-encabezado p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.producto-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.producto-card .precio {
+    color: #4a653a;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 800px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto-card img {
+        height: 220px;
+    }
+}
+
+/* =========================================
+   CATÁLOGO DE PLANES - DISEÑO PRINCIPAL
+========================================= */
+
+.catalogo {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 45px 35px 70px;
+    background-color: #f8f7f1;
+}
+
+.catalogo-encabezado {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.catalogo-encabezado h1 {
+    color: #35572d;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.catalogo-descripcion {
+    max-width: 750px;
+    margin: 10px auto 0;
+    font-size: 18px;
+    color: #2f302d;
+    line-height: 1.6;
+}
+
+.decoracion-catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #8ca473;
+}
+
+.decoracion-catalogo span {
+    width: 110px;
+    height: 1px;
+    background-color: #a9bc96;
+}
+
+.decoracion-catalogo p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.producto-card {
+    background-color: #fffefa;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #e5e7dd;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+    padding: 22px;
+    padding-bottom: 18px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.producto-icono {
+    width: 58px;
+    height: 58px;
+    margin: -28px auto 10px;
+    border-radius: 50%;
+    background-color: #fffefa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+}
+
+.producto-card h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 24px;
+    line-height: 1.15;
+    margin: 5px 15px 12px;
+}
+
+.producto-card > p:not(.precio) {
+    min-height: 100px;
+    padding: 0 22px;
+    font-size: 15px;
+    color: #343631;
+    line-height: 1.6;
+}
+
+.linea-producto {
+    width: 55%;
+    height: 1px;
+    background-color: #b9c8aa;
+    margin: 10px auto 12px;
+}
+
+.precio {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.boton-producto {
+    display: inline-block;
+    min-width: 165px;
+    padding: 10px 25px;
+    background-color: #355f2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.boton-producto:hover {
+    background-color: #60804d;
+}
+
+header nav ul li a.activo {
+    color: #dce9d2;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* =========================================
+   FOOTER PRODUCTOS
+========================================= */
+
+.footer-completo {
+    background-color: #eef1e5;
+    color: #33362f;
+    padding: 30px 50px 0;
+}
+
+.footer-contenido {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 0.8fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.footer-marca img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-marca p {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-contenido h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2f352b;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.footer-contenido a {
+    display: block;
+    color: #33362f;
+    text-decoration: none;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.footer-contenido a:hover {
+    color: #5e7c4c;
+}
+
+.footer-contenido p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.redes-sociales {
+    font-size: 25px !important;
+}
+
+.footer-copy {
+    max-width: 1400px;
+    margin: 25px auto 0;
+    border-top: 1px solid #d0d8c8;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* =========================================
+   RESPONSIVE PRODUCTOS
+========================================= */
+
+@media (max-width: 1100px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-contenido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogo {
+        padding: 30px 15px 50px;
+    }
+
+    .catalogo-encabezado h1 {
+        font-size: 34px;
+    }
+
+    .catalogo-descripcion {
+        font-size: 15px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto-imagen {
+        height: 220px;
+    }
+
+    }
+
+    .adorno-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    }
+
+    .adorno-titulo .linea {
+    width: 90px;
+    height: 1px;
+    background-color: #9aaa82;
+    }
+
+    .adorno-titulo .rombo {
+    width: 7px;
+    height: 7px;
+    background-color: #6f8556;
+    transform: rotate(45deg);
+    }
+
+    /* =========================================
+   DETALLE DEL PRODUCTO
+   ========================================= */
+
+.detalle-producto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+}
+
+.detalle-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fffefa;
+    border: 1px solid #e3e6dc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.detalle-imagen {
+    width: 100%;
+    min-height: 600px;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.detalle-informacion {
+    padding: 50px 45px;
+}
+
+.detalle-categoria {
+    color: #7b9166;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.detalle-informacion h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.detalle-precio {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.detalle-descripcion {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #454740;
+    margin-bottom: 25px;
+}
+
+.detalle-incluye {
+    border-top: 1px solid #d7ddcf;
+    border-bottom: 1px solid #d7ddcf;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+.detalle-incluye h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #4a653a;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.detalle-incluye ul {
+    padding-left: 20px;
+}
+
+.detalle-incluye li {
+    margin-bottom: 6px;
+}
+
+.cantidad-sesiones {
+    margin-bottom: 20px;
+}
+
+.cantidad-sesiones > p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.selector-cantidad button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: #dfe9d6;
+    color: #35572d;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selector-cantidad button:hover {
+    background-color: #cbdabc;
+}
+
+#cantidad {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.total-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.total-producto strong {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 28px;
+}
+
+.boton-agendar {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background-color: #355f2d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.boton-agendar:hover {
+    background-color: #60804d;
+}
+
+.volver-catalogo {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    background-color: #8ca473;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.volver-catalogo:hover {
+    background-color: #6f8556;
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================================
+   FORMAS DE PAGO Y DATOS DE TARJETA
+   Estilos del formulario de pago con débito o crédito.
+========================================= */
+.datos-tarjeta {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f7f7f2;
+    border-radius: 12px;
+}
+
+.datos-tarjeta h3 {
+    color: #556b3f;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.datos-tarjeta label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #444;
+}
+
+.datos-tarjeta input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.datos-tarjeta-fila {
+    display: flex;
+    gap: 15px;
+}
+
+.datos-tarjeta-fila div {
+    width: 50%;
+}
+
+#botonPagar {
+    width: 100%;
+    padding: 14px;
+    background-color: #556b3f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botonPagar:hover {
+    background-color: #435532;
+}
+
+#mensajePago {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE - DETALLE DEL PRODUCTO
+========================================= */
+
+@media (max-width: 800px) {
+
+    .detalle-producto {
+        padding: 30px 15px 50px;
+    }
+
+    .detalle-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-imagen {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .detalle-informacion {
+        padding: 30px 25px;
+    }
+
+    .detalle-informacion h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* =====================================================
+   BLOQUE 3 - USUARIOS Y FORMULARIOS
+   Aquí se trabaja el inicio de sesión, registro de usuario
+   y los campos y botones de los formularios.
+===================================================== */
+
+/* =========================================
+   INICIO DE SESIÓN 
+   ========================================= */
+
+.login-formulario {
+    max-width: 450px;
+    margin: 60px auto 80px;
+    padding: 40px;
+    background-color: #fffefa;
+    border: 1px solid #e2e6dc;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-formulario h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.login-descripcion {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.campo-login {
+    margin-bottom: 20px;
+}
+
+.campo-login label {
+    display: block;
+    color: #35572d;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo-login input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd4c4;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo-login input:focus {
+    border-color: #668158;
+}
+
+.boton-login {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background-color: #355f2d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-login:hover {
+    background-color: #60804d;
+}
+
+.login-enlaces {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.login-enlaces p {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   ENLACES DEL LOGIN
+========================================= */
+
+.login-enlaces a {
+    display: inline;
+    background-color: transparent;
+    color: #4a653a;
+    padding: 0;
+    border-radius: 0;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-enlaces a:hover {
+    background-color: transparent;
+    color: #35572d;
+    text-decoration: underline;
+}
+
+/* =========================================
+   REGISTRO DE USUARIO
+   ========================================= */
+
+.contenedor-formulario {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+}
+
+.formulario {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 55px 50px 45px;
+    background-color: #fffefa;
+    border: 1px solid #e3e6dc;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 25px;
+}
+
+.formulario h2 {
+    grid-column: 1 / -1;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #35572d;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    color: #35572d;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: -12px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cbd4c4;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.formulario input:focus {
+    border-color: #668158;
+    box-shadow: 0 0 0 2px rgba(102, 129, 88, 0.12);
+}
+
+.formulario button[type="submit"] {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #355f2d;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #60804d;
+}
+
+.enlace-formulario {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.enlace-formulario a {
+    display: inline;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    color: #4a653a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace-formulario a:hover {
+    background-color: transparent;
+    color: #35572d;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE - REGISTRO EN CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .contenedor-formulario {
+        padding: 30px 15px 50px;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        padding: 35px 25px;
+    }
+
+    .formulario h2,
+    .formulario button[type="submit"],
+    .enlace-formulario {
+        grid-column: 1;
+    }
+
+    .formulario h2 {
+        font-size: 30px;
+    }
+}

@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriVida - Registrarse</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
+
+    <header>
+
+        <img
+            src="img/logo-nutrivida.png"
+            alt="Logo NutriVida"
+            class="logo"
+        >
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="contenedor-formulario">
+
+        <form id="registro" class="formulario">
+
+            <h2>Registrar Usuario</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" placeholder="XX.XXX.XXX-X" required>
+
+            <label for="fecnac">Fecha de nacimiento:</label>
+            <input type="date" id="fecnac" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="+56912345678" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="example@example.com" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+
+            <label for="confirmarContrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmarContrasena" required>
+
+            <button type="submit">Registrar</button>
+
+            <p class="enlace-formulario">
+                ¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a>
+            </p>
+
+            <p class="enlace-formulario">
+                <a href="index.html">← Volver al inicio</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

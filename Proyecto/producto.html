@@ -1,11 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalle del plan | NutriVida</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <img src="img/logo-nutrivida.png" alt="Logo NutriVida" class="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Planes</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="detalle-producto">
+
+        <section class="detalle-contenedor">
+
+            <div class="detalle-imagen">
+                <img id="imagenProducto" src="img/plan-perdida-peso.png" alt="Plan de pérdida de peso">
+            </div>
+
+
+            <div class="detalle-informacion">
+
+                <p class="detalle-categoria">PLAN NUTRICIONAL</p>
+
+                <h1 id="nombreProducto">Plan de pérdida de peso</h1>
+
+                <p class="detalle-precio" id="precioProducto">$35.000</p>
+
+                <p class="detalle-descripcion" id="descripcionProducto">
+                    Programa nutricional enfocado en reducir grasa corporal
+                    de manera saludable y sostenible, evitando dietas extremas
+                    y adaptándose a las necesidades y estilo de vida de cada paciente.
+                </p>
+
+
+                <div class="detalle-incluye">
+
+                    <h2>¿Qué incluye?</h2>
+
+                    <ul>
+                        <li>Evaluación nutricional inicial.</li>
+                        <li>Plan alimenticio personalizado.</li>
+                        <li>Recomendaciones según tus objetivos.</li>
+                        <li>Seguimiento del progreso.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="cantidad-sesiones">
+
+                    <p>Cantidad de sesiones</p>
+
+                    <div class="selector-cantidad">
+                        <button type="button" id="disminuir">−</button>
+
+                        <span id="cantidad">1</span>
+
+                        <button type="button" id="aumentar">+</button>
+                    </div>
+
+                </div>
+
+
+                <div class="total-producto">
+                    <span>Total:</span>
+                    <strong id="total">$35.000</strong>
+                </div>
+                <div class="forma-pago">
+                    
+
+                     <h3>Selecciona tu forma de pago</h3>
+
+                     <label>
+                        <input type="radio" name="formaPago" value="debito">
+                        Débito
+                     </label>
+
+                    <label>
+                         <input type="radio" name="formaPago" value="credito">
+                        Crédito
+                    </label>
+
+                     <label>
+                         <input type="radio" name="formaPago" value="efectivo">
+                         Efectivo
+                     </label>
+
+                </div>
+
+
+                <button type="button" class="boton-agendar" id="botonAgendar">
+                    Seleccionar plan
+                </button>
+                <div class="datos-tarjeta" id="datosTarjeta" style="display: none;">
+
+    <h3>Datos de la tarjeta</h3>
+
+    <label for="numeroTarjeta">Número de tarjeta</label>
+    <input type="text" id="numeroTarjeta" maxlength="19"
+           placeholder="1234 5678 9012 3456">
+
+    <label for="titularTarjeta">Nombre del titular</label>
+    <input type="text" id="titularTarjeta"
+           placeholder="Nombre y apellido">
+
+    <div class="datos-tarjeta-fila">
+
+        <div>
+            <label for="vencimientoTarjeta">Vencimiento</label>
+            <input type="text" id="vencimientoTarjeta"
+                   maxlength="5" placeholder="MM/AA">
+        </div>
+
+        <div>
+            <label for="cvvTarjeta">CVV</label>
+            <input type="password" id="cvvTarjeta"
+                   maxlength="3" placeholder="123">
+        </div>
+
+    </div>
+
+    <button type="button" id="botonPagar">
+    Pagar <span id="totalPagar">$35.000</span>
+</button>
+
+    <div id="mensajePago"></div>
+
+</div>
+
+
+
+                <a href="productos.html" class="volver-catalogo">
+                    ← Volver a los planes disponibles
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
